@@ -1,0 +1,13 @@
+### bundle install
+
+### 如果修改之后预览没效果，可以尝试移除对应部分的index.html
+./bin/dockerhub_run.sh
+./bin/deploy
+
+ 
+
+### git push origin master
+
+
+
+
