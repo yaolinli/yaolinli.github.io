@@ -1,0 +1,52 @@
+name: Update Scholar citations
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 3 * * *'
+  push:
+    branches: [main, master]
+    paths:
+      - '.github/workflows/update-scholar-citations.yml'
+      - 'scripts/update_scholar_citations.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scholar-citations
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch and validate the all-time citation count
+        run: |
+          python3 scripts/test_scholar_citations.py
+          python3 scripts/update_scholar_citations.py > "$RUNNER_TEMP/scholar-citations.json"
+      - name: Publish only statistics to a separate branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          stats_dir=$(mktemp -d "$RUNNER_TEMP/scholar-stats.XXXXXX")
+          git init --initial-branch=google-scholar-stats "$stats_dir"
+          git -C "$stats_dir" remote add origin "$(git remote get-url origin)"
+          git -C "$stats_dir" config http.https://github.com/.extraheader "$(git config --get http.https://github.com/.extraheader)"
+          if git -C "$stats_dir" ls-remote --exit-code origin refs/heads/google-scholar-stats; then
+            git -C "$stats_dir" fetch --depth=1 origin google-scholar-stats
+            git -C "$stats_dir" checkout -B google-scholar-stats FETCH_HEAD
+          else
+            result=$?
+            if [ "$result" -ne 2 ]; then exit "$result"; fi
+          fi
+          cp "$RUNNER_TEMP/scholar-citations.json" "$stats_dir/scholar-citations.json"
+          git -C "$stats_dir" config user.name 'github-actions[bot]'
+          git -C "$stats_dir" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$stats_dir" add scholar-citations.json
+          if git -C "$stats_dir" diff --cached --quiet; then exit 0; fi
+          git -C "$stats_dir" commit -m 'Update Google Scholar citation statistics'
+          git -C "$stats_dir" push origin HEAD:refs/heads/google-scholar-stats

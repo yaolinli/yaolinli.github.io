@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Linli Yao</title>
+    <title>Linli Yao | 姚林丽</title>
     <meta name="author" content="Linli Yao"/>
-    <meta name="description" content=""/>
+    <meta name="description" content="Linli Yao (姚林丽), PhD student at Peking University. Efficient and time-aware video understanding with multimodal large language models."/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css"
@@ -17,11 +17,14 @@
           integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&amp;text=%E5%A7%9A%E6%9E%97%E4%B8%BD&amp;display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css"
           media="none" id="highlight_theme_light"/>
     <link rel="shortcut icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🃏</text></svg>">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css?v=code-badge-19">
+    <script src="./assets/js/scholar-citations.js" defer></script>
     <link rel="canonical" href="https://yaolinli.github.io/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css"
           media="none" id="highlight_theme_dark"/>
@@ -31,405 +34,322 @@
 </head>
 <body class="fixed-top-nav ">
 <header>
-    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-            
-            <div class="navbar-brand social">
-                
-                <a href="https://www.xiaohongshu.com/user/profile/5b729fc22eeeda00019453a4?tab=note&subTab=note" title="Xiaohongshu"
-                target="_blank" rel="noopener noreferrer">
-                <img src="./assets/img/paper/xiaohongshu.png"
-                alt="Xiaohongshu" class="social-svg" style="width: 44.4px; height: 27.0px; vertical-align: middle;">
-                </a>
-                <a href="https://www.zhihu.com/people/xiao-xiao-xiao-li-zi-76/answers" title="Zhihu"
-                                                             target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-zhihu"></i>
-                </a>
-                <!-- Second Twitter / X account -->
-                
-                <a href="https://x.com/Elsa_er_" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a
-                    href="mailto:linliyao@stu.pku.edu.cn" title="email"><i
-                    class="fas fa-envelope"></i></a> <a href="https://scholar.google.com/citations?user=rZJRGlQAAAAJ&hl=en"
-                                                        title="Google Scholar" target="_blank"
-                                                        rel="noopener noreferrer"><i
-                    class="ai ai-google-scholar"></i></a>
-                    
-                <a href="https://github.com/yaolinli" title="GitHub"
-                                                             target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-github"></i></a> 
-                      </div>
-            <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse"
-                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class="sr-only">Toggle navigation</span> <span
-                    class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span
-                    class="icon-bar bottom-bar"></span></button>
-            <div class="collapse navbar-collapse text-right" id="navbarNav">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item active"><a class="nav-link" href="/">About<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
-                    <li class="toggle-container">
-                        <button id="light-toggle" title="Change theme"><i class="fas fa-moon"></i> <i
-                                class="fas fa-sun"></i></button>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav id="navbar" class="fixed-top screenshot-nav" aria-label="Main navigation">
+      <div class="container nav-links">
+        <a href="#news">News</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Selected Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#service">Service</a>
+        <button id="light-toggle" class="screenshot-toggle" type="button" title="Change theme" aria-label="Toggle light and dark theme"><i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i></button>
+      </div>
     </nav>
     <progress id="progress" value="0">
         <div class="progress-container"><span class="progress-bar"></span></div>
     </progress>
 </header>
-<div class="container mt-5">
-    <div class="post">
-        <header class="post-header"><h1 class="post-title"> Linli Yao</h1>
-            <article>
-                <div class="profile float-right">
-                    <figure>
-                        <picture>
-                            <source class="responsive-img-srcset" media="(max-width: 480px)"
-                                    srcset="./assets/img/profile-480.webp"></source>
-                            <source class="responsive-img-srcset" media="(max-width: 800px)"
-                                    srcset="./assets/img/profile-800.webp"></source>
-                            <source class="responsive-img-srcset" media="(max-width: 1400px)"
-                                    srcset="./assets/img/profile-1400.webp"></source>
-                            <img src="./assets/img/profile.JPG" class="img-fluid z-depth-1 rounded" width="auto"
-                                 height="auto" alt="profile.png"
-                                 onerror="this.onerror=null; $('.responsive-img-srcset').remove();"></picture>
-                    </figure>
-                    <div class="address"></div>
-                </div>
-                <div class="clearfix">
-                    <p>I am a third-year PhD student at the Language Computing and Machine Learning Group
-                        (<a href="https://lancopku.github.io/" target="_blank" rel="noopener noreferrer">Lanco</a>),
-                        <a href="https://english.pku.edu.cn/" target="_blank" rel="noopener noreferrer">Peking University</a>,
-                        supervised by Prof. <a href="https://xusun.org/" target="_blank" rel="noopener noreferrer">Xu Sun</a>.
-                        Prior to this, I received my Master's and Bachelor's degrees from
-                        <a href="http://info.ruc.edu.cn/Home/index.htm" target="_blank" rel="noopener noreferrer">Renmin University of China </a>
-                        in 2023 and 2020, respectively, advised by Prof. <a href="https://www.jin-qin.com/" target="_blank" rel="noopener noreferrer">Qin Jin</a>
-                        at the <a href="https://www.ruc-aim3.com/" target="_blank" rel="noopener noreferrer">AI·M3</a> Lab.
-                    </p>
-                    <p><b style="color: var(--global-theme-color);">I expect to graduate in 2027 and am actively looking for full-time positions in 2026 (both academia and industry).</b></p>
-                    <p><strong>Research Interests</strong></p>
-                    <ul>
-                        <li><b>Multimodal Large Language Models (MLLMs)</b>: Vision-Language Understanding</li>
-                        <li><b>Efficient Video Understanding</b>: Token Compression, Frame Sampling, Streaming Video</li>
-                        <li><b>Time-aware Video Tasks</b>: Dense Video Captioning, Video Grounding, etc</li>
-                    </ul>
-                </div>
-                <!--            <div class="news"><h2>News</h2>-->
-                <!--                <div class="table-responsive" style="max-height: 15vw">-->
-                <!--                    <table class="table table-sm table-borderless">-->
-                <!--                        <tr>-->
-                <!--                            <th scope="row">Jun 26, 2023</th>-->
-                <!--                            <td> Got my master's degree! Happy graduation!</td>-->
-                <!--                        </tr>-->
-                <!--                        <tr>-->
-                <!--                            <th scope="row">Mar 6, 2023</th>-->
-                <!--                            <td> Leave NLP Center, Tencent AI Lab.</td>-->
-                <!--                        </tr>-->
-                <!--                        <tr>-->
-                <!--                            <th scope="row">Dec 17, 2022</th>-->
-                <!--                            <td> Gave a talk at "<strong>DataFunCon 2022 - AIGC Forum</strong>"!</td>-->
-                <!--                        </tr>-->
-                <!--                        <tr>-->
-                <!--                            <th scope="row">Sep 8, 2022</th>-->
-                <!--                            <td> Move to this new site as my homepage!</td>-->
-                <!--                        </tr>-->
-                <!--                        <tr>-->
-                <!--                            <th scope="row">Jun 30, 2022</th>-->
-                <!--                            <td> Our work "<strong>Multi-Modal Experience Inspired AI Creation</strong>" is accepted by-->
-                <!--                                <strong>ACM Multimedia 2022</strong>!-->
-                <!--                            </td>-->
-                <!--                        </tr>-->
-                <!--                    </table>-->
-                <!--                </div>-->
-                <!--            </div>-->
-                <br><br>
-                <div id="publications"><h2>Publications (<a href="https://scholar.google.com/citations?user=rZJRGlQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Full List</a>)</h2>
-                    <!-- <p style="font-size: 0.9em; color: gray;">* indicates equal contribution</p> -->
-                    <ol class="bibliography">
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/timechat-captioner.png">
-                                    <img src="./assets/img/paper/timechat-captioner.png" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions </b></div>
-                                <div class="author"><b>Linli Yao</b>, Yuancheng Wei, Yaojie Zhang, Lei Li, Xinlong Chen, Feifan Song, Ziyue Wang, Kun Ouyang, et al.
-                                </div>
-                                <!-- (* indicates equal contribution) -->
-                                <div class="conf"><b>ICML 2026</b>. </div>
-                                <div>
-                                [<a href="https://arxiv.org/abs/2602.08711" target="blank">Paper</a>]
-                                [<a href="https://timechat-captioner.github.io/" target="blank">Project Page</a>]
-                                [<a href="https://github.com/yaolinli/TimeChat-Captioner" target="blank">Code</a>]
-                                [<a href="https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-42K" target="blank">Dataset</a>]
-                                [<a href="https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B" target="blank">Model</a>]
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/mllm-survey.png">
-                                    <img src="./assets/img/paper/mllm-survey.png" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> [Survey] Towards Efficient Multimodal Large Language Models: A Survey on Token Compression </b></div>
-                                <div class="author"><b>Linli Yao*</b>, Long Xing*, Yang Shi*, Sida Li, Yuanxin Liu, Yuhao Dong, Yi-Fan Zhang, Lei Li, Qingxiu Dong, et al. <b>(* indicates equal contribution)</b>
-                                </div>
-                                
-                                <div class="conf">Preprint, TechRxiv, 2026. </div>
-                                <div>
-                                [<a href="https://doi.org/10.36227/techrxiv.176823010.07236701/v1" target="blank">Paper</a>]
-                                [<a href="https://github.com/yaolinli/MLLM-Token-Compression" target="blank">Github</a>]
-                                [<a href="https://mp.weixin.qq.com/s/C5Wb6n1l0s9e1GZ47dIGAQ" target="blank">机器之心</a>]
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/gens.png">
-                                    <img src="./assets/img/paper/timechat-online.png" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> TimeChat-Online: 80% Visual Tokens are Naturally Redundant in Streaming Videos </b></div>
-                                <div class="author"><b>Linli Yao*</b>, Yicheng Li*, Yuancheng Wei*, Lei Li, Shuhuai Ren, Yuanxin Liu, et al.
-                                </div>
-                                <div class="conf"><b>ACM MM 2025</b>. </div> 
-                                <div>
-                                [<a href="https://arxiv.org/pdf/2504.17343" target="blank">Paper</a>] 
-                                [<a href="https://timechat-online.github.io/" target="blank">Project Page</a>]
-                                [<a href="https://github.com/yaolinli/TimeChat-Online" target="blank">Code</a>]
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/gens.png">
-                                    <img src="./assets/img/paper/gens.png" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> Generative Frame Sampler for Long Video Understanding </b></div>
-                                <div class="author"><b>Linli Yao</b>, Haoning Wu, Kun Ouyang, Yuanxing Zhang, Caiming Xiong, Bei Chen, Xu Sun, Junnan Li
-                                </div>
-                                <!-- (* indicates equal contribution) -->
-                                <div class="conf"><b>ACL 2025 (Findings)</b>. </div> 
-                                <div>
-                                [<a href="https://arxiv.org/pdf/2503.09146" target="blank">Paper</a>] 
-                                [<a href="https://generative-sampler.github.io" target="blank">Project Page</a>]
-                                [<a href="https://github.com/yaolinli/GenS" target="blank">Code</a>]
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/deco.png">
-                                    <img src="./assets/img/paper/deco.png" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> DeCo: Decoupling Token Compression from Semantic Abstraction in Multimodal Large Language Models </b></div>
-                                <div class="author"><b>Linli Yao</b>, Lei Li, Shuhuai Ren, Lean Wang, Yuanxin Liu, Xu Sun, Lu Hou
-                                </div>
-                                <!-- (* indicates equal contribution) -->
-                                <div class="conf">Preprint, arxiv:2405.20985, 2024. </div> 
-                                <div>
-                                [<a href="https://arxiv.org/pdf/2405.20985" target="blank">Paper</a>] 
-                                [<a href="https://github.com/yaolinli/DeCo" target="blank">Code</a>]
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/videot3.png">
-                                    <img src="./assets/img/paper/videot3.png" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> Temporal Reasoning Transfer from Text to Video </b></div>
-                                <div class="author">Lei Li*, Yuanxin Liu*, <b>Linli Yao</b>, Peiyuan Zhang, Chenxin An, Lean Wang, Xu Sun, Lingpeng Kong, Qi Liu
-                                </div>
-                                <!-- (* indicates equal contribution) -->
-                                <div class="conf"><b>ICLR 2025</b>.</div> 
-                                <div>
-                                [<a href="https://arxiv.org/pdf/2410.06166" target="blank">Paper</a>] 
-                                [<a href="https://video-t3.github.io/" target="blank">Project Page</a>]
-                                [<a href="https://github.com/llyx97/video-t3/" target="blank">Code</a>]
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/VDEdit.png">
-                                    <img src="./assets/img/paper/VDEdit.png" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> Edit As You Wish: Video Caption Editing with Multi-grained User Control</b></div>
-                                <div class="author"><b>Linli Yao</b>, Yuanmeng Zhang, Ziheng Wang, Xinglin Hou, Tiezheng Ge, Yuning Jiang, Xu Sun, Qin Jin
-                                </div>
-                                <!-- (* indicates equal contribution) -->
-                                <div class="conf"><b>ACM MM 2024</b>.</div> <div>
-                                [<a href="https://arxiv.org/pdf/2305.08389v2" target="blank">Paper</a>] 
-                                [<a href="https://modelscope.cn/datasets/modelscope/Video_Description_Editing" target="blank">Dataset</a>]
-                                [<a href="https://github.com/yaolinli/VDEdit" target="blank">Code</a>]
-                            </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/TimeChat.PNG">
-                                    <img src="./assets/img/paper/TimeChat.PNG" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> TimeChat: A Time-sensitive Multimodal Large Language Model for Long Video Understanding </b></div>
-                                <div class="author">Shuhuai Ren*, <b>Linli Yao*</b>, Shicheng Li, Xu Sun, Lu Hou </div>
-                                <div><b>(* indicates equal contribution)</b></div>
-                                <div class="conf"><b>CVPR 2024</b>.</div><div>
-                                [<a href="https://arxiv.org/pdf/2312.02051.pdf" target="blank">Paper</a>] 
-                                [<a href="https://github.com/RenShuhuai-Andy/TimeChat" target="blank">Code</a>]
-                            </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/UBISS.PNG">
-                                    <img src="./assets/img/paper/UBISS.PNG" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> UBiSS: A Unified Framework for Bimodal Semantic Summarization of Videos</b></div>
-                                <div class="author">Yuting Mei, <b>Linli Yao</b>, Qin Jin
-                                </div>
-                                <div class="conf"><b>ICMR 2024</b>.</div> 
-                                [<a href="https://dl.acm.org/doi/abs/10.1145/3652583.3658038" target="blank">Paper</a>] 
-                                [<a href="https://github.com/MeiYutingg/UBiSS" target="blank">Code</a>]
-                                
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/ladic.PNG">
-                                    <img src="./assets/img/paper/ladic.PNG" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> LaDiC: Are Diffusion Models Really Inferior to Autoregressive Counterparts for Image-to-text Generation?</b></div>
-                                <div class="author">Yuchi Wang, Shuhuai Ren, Rundong Gao, <b>Linli Yao</b>, Qingyan Guo, Kaikai An, Jianhong Bai, Xu Sun
-                                </div>
-                                <div class="conf"><b>NAACL 2024</b>.</div> 
-                                [<a href="https://arxiv.org/pdf/2404.10763" target="blank">Paper</a>] 
-                                [<a href="https://github.com/wangyuchi369/LaDiC" target="blank">Code</a>]
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/CapEnrich.PNG">
-                                    <img src="./assets/img/paper/CapEnrich.PNG" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> CapEnrich: Enriching Caption Semantics for Web Images via Cross-modal Pre-trained Knowledge</b></div>
-                                <div class="author"><b>Linli Yao</b>, Weijing Chen, Qin Jin
-                                </div>
-                                <!-- (* indicates equal contribution) -->
-                                <div class="conf"><b>The Web Conference (WWW) 2023</b>. </div> <div>
-                                [<a href="https://arxiv.org/pdf/2211.09371.pdf" target="blank">Paper</a>] 
-                                [<a href="https://github.com/yaolinli/CapEnrich" target="blank">Code</a>]
-                            </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/sigir.PNG">
-                                    <img src="./assets/img/paper/sigir.PNG" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b> Rethinking Benchmarks for Cross-modal Image-text Retrieval</b></div>
-                                <div class="author">Weijing Chen, <b>Linli Yao</b>, Qin Jin
-                                </div>
-                                <!-- (* indicates equal contribution) -->
-                                <div class="conf"><b>SIGIR 2023</b>, long paper. </div> <div>
-                                [<a href="https://arxiv.org/pdf/2304.10824.pdf" target="blank">Paper</a>] 
-                                [<a href="https://github.com/cwj1412/MSCOCO-Flikcr30K_FG" target="blank">Code</a>]
-                            </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row item">
-                            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
-                                <a class="image-popup-no-margins" href="./assets/img/paper/IDC.PNG">
-                                    <img src="./assets/img/paper/IDC.PNG" class="img-thumbnail img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
-                                <div class="paper"><b>Image Difference Captioning with Pre-training and Contrastive Learning</b></div>
-                                <div class="author"><b>Linli Yao</b>, Weiying Wang, Qin Jin
-                                </div>
-                                <!-- (* indicates equal contribution) -->
-                                <div class="conf"><b> AAAI 2022 </b>. </div> <div>
-                                [<a href="https://arxiv.org/pdf/2202.04298.pdf" target="blank">Paper</a>] 
-                                [<a href="https://github.com/yaolinli/IDC" target="blank">Code</a>]
-                            </div>
-                            </div>
-                        </div>
-                    </ol>
-                </div>
-                <br>
-                <div id="education"><h2>Education</h2>
-                    <div class="table-responsive">
-                        <table class="table table-sm table-borderless">
-                            <tr>
-                                <th scope="row">2023.09 - Present</th>
-                                <td>PhD Student</td>
-                                <!--                            <td>Computer Software and Theory, Peking University</td>-->
-                                <td>School of Computer Science, Peking University</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2020.09 - 2023.06</th>
-                                <td> Master</td>
-                                <!--                            <td>Computer Applied Technology, Renmin University of China</td>-->
-                                <td>School of Information, Renmin University of China</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2016.09 - 2020.06</th>
-                                <td>Bachelor</td>
-                                <!--                            <td>Computer Science and Technology, Renmin University of China</td>-->
-                                <td>School of Information, Renmin University of China</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <br>
-                <div id="experience"><h2>Experience</h2>
-                    <br>
-                    <div class="row item">
+<main class="container mt-5" id="main">
+  <div class="post">
+    <article>
+      <section class="intro" id="about" aria-labelledby="name">
+        <div class="intro-copy">
+          <h1 id="name">Linli Yao <span class="name-divider" aria-hidden="true">|</span> <span class="name-cn" lang="zh-CN">姚林丽</span></h1>
+          <p>I am a PhD student in the <a href="https://lancopku.github.io/">Language Computing and Machine Learning Group (Lanco)</a> at <a href="https://english.pku.edu.cn/">Peking University</a>, advised by Prof. <a href="https://xusun.org/">Xu Sun</a>.</p>
+          <p>Previously, I received my master's and bachelor's degrees from <a href="http://info.ruc.edu.cn/Home/index.htm">Renmin University of China</a>, advised by Prof. <a href="https://www.jin-qin.com/">Qin Jin</a> at the <a href="https://www.ruc-aim3.com/">AI·M3 Lab</a>.</p>
+          <p class="availability">I expect to graduate in <strong>June 2027</strong> and am exploring full-time opportunities in academia and industry.</p>
+          <p class="collaboration-note">I welcome discussions and collaborations on long-horizon multimodal intelligence, multimodal agents, and embodied intelligence. Feel free to <a href="mailto:linliyao@stu.pku.edu.cn">get in touch</a>!</p>
+          <div class="contact-links" aria-label="Contact and research profiles">
+            <a href="mailto:linliyao@stu.pku.edu.cn">Email</a>
+            <a href="https://scholar.google.com/citations?user=rZJRGlQAAAAJ&amp;hl=en">Google Scholar</a>
+            <a href="https://github.com/yaolinli">GitHub</a>
+            <a href="https://x.com/Elsa_er_">Twitter</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <a href="./assets/img/profile-hiking.jpg"><img src="./assets/img/profile-hiking.jpg" class="rounded" width="1407" height="1773" alt="Linli Yao hiking on the Seceda Ridge Trail, with mountain peaks in the background" fetchpriority="high"></a>
+          <figcaption><span lang="zh-CN">山就在那里。</span><em>The mountain is there.</em></figcaption>
+        </figure>
+        <div class="research">
+          <h2>Research Interests</h2>
+          <p>I study <strong>efficient and time-aware video understanding</strong> with multimodal large language models. My research connects two complementary directions:</p>
+        <ul class="research-directions">
+          <li><strong>Efficient video understanding.</strong> Visual token compression, adaptive frame sampling, and efficient processing of long and streaming videos.</li>
+          <li><strong>Time-aware video-language modeling.</strong> Temporal grounding, temporal reasoning, and fine-grained, structured audio-visual captioning.</li>
+        </ul>
+        </div>
+      </section>
+
+      <section id="news">
+        <h2 id="news-heading">News</h2>
+
+      <div class="news-scroll" role="region" aria-labelledby="news-heading" tabindex="0"><table class="table table-sm table-borderless news-table"><tbody>
+        <tr><th scope="row">2026</th><td><a href="#claw-eval">Claw-Eval</a> accepted to <strong>NeurIPS 2026 ED Track</strong> as a poster.</td></tr>
+        <tr><th scope="row">2026</th><td>Released <a href="#mimo">MiMo-V2.6</a> — honored to contribute as a <strong>Core Contributor</strong>.</td></tr>
+        <tr><th scope="row">2026</th><td>Two papers accepted to <strong>Findings of EMNLP 2026</strong>: <a href="#adac-grpo">AdaC-GRPO</a> and <a href="#quality-outcome">Quality, Not Just Outcome</a>.</td></tr>
+        <tr><th scope="row">2026</th><td><a href="#diadem">DiaDem</a>, on dialogue descriptions in audio-visual video captioning, accepted to <strong>ECCV 2026</strong>.</td></tr>
+        <tr><th scope="row">2026</th><td><a href="#timechat-captioner">TimeChat-Captioner</a> and <a href="#reaforest">ReaForest</a> accepted to <strong>ICML 2026</strong>.</td></tr>
+          <tr><th scope="row">2026</th><td>Received the <strong>ICML 2026 Silver Reviewer Award</strong>.</td></tr>
+          <tr><th scope="row">2026</th><td><a href="#avocado">AVoCaDO</a> accepted to <strong>ICLR 2026</strong>.</td></tr>
+          <tr><th scope="row">2026</th><td><a href="#conan">Conan</a> accepted to <strong>CVPR 2026</strong>.</td></tr>
+          <tr><th scope="row">2026</th><td><a href="#rico-selection">RICo</a>, on instruction-tuning data selection, accepted to <strong>AAAI 2026</strong>.</td></tr>
+          <tr><th scope="row">2026</th><td><a href="#camera-motion">Trajectory-Enhanced Camera Motion Understanding</a> accepted to <strong>ICASSP 2026</strong>.</td></tr>
+          <tr><th scope="row">2026</th><td>Released our <a href="#token-survey">survey on multimodal token compression</a> and its open paper collection.</td></tr>
+          <tr><th scope="row">2026</th><td>Joined Xiaomi's <strong>MiMo LLM-Core</strong> team through the <span lang="zh-CN">“顶尖人才计划”</span>.</td></tr>
+          <tr><th scope="row">2025</th><td><a href="#rico-recaptioning">RICO</a>, on image recaptioning, accepted to <strong>EMNLP 2025</strong>.</td></tr>
+          <tr><th scope="row">2025</th><td><a href="#timechat-online">TimeChat-Online</a> accepted to <strong>ACM Multimedia 2025</strong>.</td></tr>
+        </tbody></table></div>
+      </section>
+
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="education-row"><div><strong>Peking University</strong><p>PhD in Computer Software and Theory · Advisor: <a href="https://xusun.org/">Xu Sun</a></p></div><span class="date">Sep 2023 – Jun 2027 (expected)</span></div>
+        <div class="education-row"><div><strong>Renmin University of China</strong><p>Master's in Computer Application Technology · Advisor: <a href="https://www.jin-qin.com/">Qin Jin</a></p></div><span class="date">Sep 2020 – Jun 2023</span></div>
+        <div class="education-row"><div><strong>Renmin University of China</strong><p>Bachelor's in Computer Science and Technology</p></div><span class="date">Sep 2016 – Jun 2020</span></div>
+      </section>
+
+      <section id="publications">
+        <h2>Selected Publications <span class="publication-heading-links">(<a href="https://scholar.google.com/citations?user=rZJRGlQAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Full List</a> <a id="scholar-citations" class="citation-badge" href="https://scholar.google.com/citations?user=rZJRGlQAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar citation count — loading the latest available statistics" aria-label="Google Scholar citations"><span class="citation-label"><i class="ai ai-google-scholar" aria-hidden="true"></i> citations</span><span class="citation-count">—</span></a>)</span></h2>
+        <p class="equal-note">* Equal contribution.</p>
+        <div class="bibliography original-bibliography">
+
+          <div class="row item" id="mimo">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/mimo-v2.6.jpg"><img src="./assets/img/paper/mimo-v2.6.jpg" class="img-thumbnail img-responsive" alt="Xiaomi MiMo mountain illustration" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf">MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement</a></h3>
+              <div class="author">LLM-Core Xiaomi <strong>(As a Core Contributor)</strong></div>
+              <div class="content">At Xiaomi, I work on multimodal SFT data, video-agent training data, webdev evaluation and RL grader design. I contributed to MiMo-V2-Omni, MiMo-V2.5 and MiMo-V2.6.</div>
+              <div class="paper-links"><a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf">Technical Report</a> <a href="https://github.com/XiaomiMiMo" title="Xiaomi MiMo official GitHub organization">GitHub</a> <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL">Model</a> <a href="https://mimo.xiaomi.com/mimo-v2-6">Blog</a> <a href="https://aistudio.xiaomimimo.com">Demo</a></div>
+            </div>
+          </div>
+
+          <div class="row item" id="timechat-captioner">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/timechat-captioner.png"><img src="./assets/img/paper/timechat-captioner.png" class="img-thumbnail img-responsive" alt="timechat-captioner research overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://arxiv.org/abs/2602.08711">TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions</a></h3>
+              <div class="author"><strong>Linli Yao</strong>, Yuancheng Wei, Yaojie Zhang, Lei Li, Xinlong Chen, Feifan Song, et al.</div>
+              <div class="conf"><b>ICML 2026 <span class="ccf-label">CCF-A</span></b></div>
+              <div class="content">A task, benchmark, dataset, and model for timestamped, structured audio-visual descriptions of multi-scene videos.</div>
+              <div class="paper-links"><a href="https://arxiv.org/abs/2602.08711">Paper</a> <a href="https://timechat-captioner.github.io/">Project Page</a> <span class="code-link-group"><a href="https://github.com/yaolinli/TimeChat-Captioner">Code</a> <span class="stars-parenthesis">(<a class="code-stars-badge" href="https://github.com/yaolinli/TimeChat-Captioner/stargazers" title="View GitHub stars"><img src="https://img.shields.io/github/stars/yaolinli/TimeChat-Captioner?style=social&amp;logo=github&amp;label=Stars" alt="GitHub Stars" height="20" loading="lazy"></a>)</span></span> <a href="https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-42K">Dataset</a> <a href="https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B">Model</a> <a href="https://huggingface.co/spaces/hugging-apps/timechat-captioner">Demo</a></div>
+              <div class="impact-metrics" aria-label="Open-source impact">
+                <a class="download-metric" href="https://huggingface.co/datasets/yaolily/Timechat-OmniCaptioner-42K" data-hf-type="datasets" data-hf-repo="yaolily/Timechat-OmniCaptioner-42K" title="Cumulative downloads · checked Sep, 2026"><span>Total dataset downloads</span> <strong class="metric-count">11,103</strong> <small class="metric-status">(by Sep, 2026)</small></a>
+                <a class="download-metric" href="https://huggingface.co/yaolily/TimeChat-Captioner-GRPO-7B" data-hf-type="models" data-hf-repo="yaolily/TimeChat-Captioner-GRPO-7B" title="Cumulative downloads · checked Sep, 2026"><span>Total model downloads</span> <strong class="metric-count">7,945</strong> <small class="metric-status">(by Sep, 2026)</small></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row item" id="timechat-online">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/timechat-online.png"><img src="./assets/img/paper/timechat-online.png" class="img-thumbnail img-responsive" alt="timechat-online research overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2504.17343">TimeChat-Online: 80% Visual Tokens are Naturally Redundant in Streaming Videos</a></h3>
+              <div class="author"><strong>Linli Yao*</strong>, Yicheng Li*, Yuancheng Wei*, Lei Li, Shuhuai Ren, Yuanxin Liu, et al.</div>
+              <div class="conf"><b>ACM MM 2025 <span class="ccf-label">CCF-A</span></b></div>
+              <div class="content">Efficient streaming video understanding through temporal redundancy reduction, connecting video perception with visual token compression.</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2504.17343">Paper</a> <a href="https://timechat-online.github.io/">Project Page</a> <span class="code-link-group"><a href="https://github.com/yaolinli/TimeChat-Online">Code</a> <span class="stars-parenthesis">(<a class="code-stars-badge" href="https://github.com/yaolinli/TimeChat-Online/stargazers" title="View GitHub stars"><img src="https://img.shields.io/github/stars/yaolinli/TimeChat-Online?style=social&amp;logo=github&amp;label=Stars" alt="GitHub Stars" height="20" loading="lazy"></a>)</span></span> <a href="https://huggingface.co/datasets/yaolily/TimeChat-Online-139K">Dataset</a> <a href="https://huggingface.co/wyccccc/TimeChatOnline-7B">Model</a></div>
+              <div class="impact-metrics" aria-label="Open-source impact">
+                <a class="download-metric" href="https://huggingface.co/datasets/yaolily/TimeChat-Online-139K" data-hf-type="datasets" data-hf-repo="yaolily/TimeChat-Online-139K" title="Cumulative downloads · checked Sep, 2026"><span>Total dataset downloads</span> <strong class="metric-count">45,598</strong> <small class="metric-status">(by Sep, 2026)</small></a>
+                <a class="download-metric" href="https://huggingface.co/wyccccc/TimeChatOnline-7B" data-hf-type="models" data-hf-repo="wyccccc/TimeChatOnline-7B" title="Cumulative downloads · checked Sep, 2026"><span>Total model downloads</span> <strong class="metric-count">8,833</strong> <small class="metric-status">(by Sep, 2026)</small></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row item" id="timechat">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/TimeChat.PNG"><img src="./assets/img/paper/TimeChat.PNG" class="img-thumbnail img-responsive" alt="timechat research overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2312.02051.pdf">TimeChat: A Time-sensitive Multimodal Large Language Model for Long Video Understanding</a></h3>
+              <div class="author">Shuhuai Ren*, <strong>Linli Yao*</strong>, Shicheng Li, Xu Sun, Lu Hou</div>
+              <div class="conf"><b>CVPR 2024 <span class="ccf-label">CCF-A</span></b></div>
+              <div class="content">A time-sensitive multimodal large language model for long-video understanding that unifies timestamp-based tasks, including dense video captioning, temporal video grounding, and video highlight detection.</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2312.02051.pdf">Paper</a> <span class="code-link-group"><a href="https://github.com/RenShuhuai-Andy/TimeChat">Code</a> <span class="stars-parenthesis">(<a class="code-stars-badge" href="https://github.com/RenShuhuai-Andy/TimeChat/stargazers" title="View GitHub stars"><img src="https://img.shields.io/github/stars/RenShuhuai-Andy/TimeChat?style=social&amp;logo=github&amp;label=Stars" alt="GitHub Stars" height="20" loading="lazy"></a>)</span></span></div>
+            </div>
+          </div>
+
+          <div class="row item" id="token-survey">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/mllm-survey.png"><img src="./assets/img/paper/mllm-survey.png" class="img-thumbnail img-responsive" alt="Multimodal token compression survey overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://github.com/yaolinli/MLLM-Token-Compression">MLLM Token Compression Survey</a></h3>
+              <div>Towards Efficient Multimodal Large Language Models: A Survey on Token Compression</div>
+              <div class="author"><b>Linli Yao*</b>, Long Xing*, Yang Shi*, Sida Li, Yuanxin Liu, Yuhao Dong, Yi-Fan Zhang, Lei Li, Qingxiu Dong, et al. </div>
+              <div class="conf">TechRxiv preprint · 2026</div>
+              <div class="paper-links"><a href="https://doi.org/10.36227/techrxiv.176823010.07236701/v1">Paper</a> <span class="code-link-group"><a href="https://github.com/yaolinli/MLLM-Token-Compression">Code</a> <span class="stars-parenthesis">(<a class="code-stars-badge" href="https://github.com/yaolinli/MLLM-Token-Compression/stargazers" title="View GitHub stars"><img src="https://img.shields.io/github/stars/yaolinli/MLLM-Token-Compression?style=social&amp;logo=github&amp;label=Stars" alt="GitHub Stars" height="20" loading="lazy"></a>)</span></span> <a href="https://mp.weixin.qq.com/s/C5Wb6n1l0s9e1GZ47dIGAQ">机器之心</a></div>
+            </div>
+          </div>
+
+          <div class="row item" id="gens">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/gens.png"><img src="./assets/img/paper/gens.png" class="img-thumbnail img-responsive" alt="gens research overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2503.09146">Generative Frame Sampler for Long Video Understanding</a></h3>
+              <div class="author"><strong>Linli Yao</strong>, Haoning Wu, Kun Ouyang, Yuanxing Zhang, Caiming Xiong, Bei Chen, Xu Sun, Junnan Li</div>
+              <div class="conf"><b>Findings of ACL 2025</b></div>
+              <div class="content">A generative frame sampler that selects question-relevant frames for efficient long-video understanding.</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2503.09146">Paper</a> <a href="https://generative-sampler.github.io">Project Page</a> <a href="https://github.com/yaolinli/GenS">Code</a></div>
+            </div>
+          </div>
+
+          <div class="row item" id="deco">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/deco.png"><img src="./assets/img/paper/deco.png" class="img-thumbnail img-responsive" alt="deco research overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2405.20985">DeCo: Decoupling Token Compression from Semantic Abstraction in Multimodal Large Language Models</a></h3>
+              <div class="author"><strong>Linli Yao</strong>, Lei Li, Shuhuai Ren, Lean Wang, Yuanxin Liu, Xu Sun, Lu Hou</div>
+              <div class="conf"><b>Preprint · 2024</b></div>
+              <div class="content">Decoupling visual token compression from semantic abstraction to simplify and improve multimodal representations.</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2405.20985">Paper</a> <a href="https://github.com/yaolinli/DeCo">Code</a></div>
+            </div>
+          </div>
+
+          <div class="row item" id="vdedit">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/VDEdit.png"><img src="./assets/img/paper/VDEdit.png" class="img-thumbnail img-responsive" alt="vdedit research overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2305.08389v2">Edit As You Wish: Video Caption Editing with Multi-grained User Control</a></h3>
+              <div class="author"><strong>Linli Yao</strong>, Yuanmeng Zhang, Ziheng Wang, Xinglin Hou, Tiezheng Ge, Yuning Jiang, Xu Sun, Qin Jin</div>
+              <div class="conf"><b>ACM MM 2024 <span class="ccf-label">CCF-A</span></b></div>
+              <div class="content">Fine-grained, user-controlled video caption editing at the entity, attribute, and sentence levels.</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2305.08389v2">Paper</a> <a href="https://modelscope.cn/datasets/modelscope/Video_Description_Editing">Dataset</a> <a href="https://github.com/yaolinli/VDEdit">Code</a></div>
+            </div>
+          </div>
+
+          <div class="row item" id="capenrich">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/CapEnrich.PNG"><img src="./assets/img/paper/CapEnrich.PNG" class="img-thumbnail img-responsive" alt="capenrich research overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2211.09371.pdf">CapEnrich: Enriching Caption Semantics for Web Images via Cross-modal Pre-trained Knowledge</a></h3>
+              <div class="author"><strong>Linli Yao</strong>, Weijing Chen, Qin Jin</div>
+              <div class="conf"><b>The Web Conference (WWW) 2023 <span class="ccf-label">CCF-A</span></b></div>
+              <div class="content">Enriching web-image captions with cross-modal pretrained knowledge.</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2211.09371.pdf">Paper</a> <a href="https://github.com/yaolinli/CapEnrich">Code</a></div>
+            </div>
+          </div>
+
+          <div class="row item" id="idc">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+              <a class="image-popup-no-margins" href="./assets/img/paper/IDC.PNG"><img src="./assets/img/paper/IDC.PNG" class="img-thumbnail img-responsive" alt="idc research overview" loading="lazy"></a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2202.04298.pdf">Image Difference Captioning with Pre-training and Contrastive Learning</a></h3>
+              <div class="author"><strong>Linli Yao</strong>, Weiying Wang, Qin Jin</div>
+              <div class="conf"><b>AAAI 2022 <span class="ccf-label">CCF-A</span></b></div>
+              <div class="content">Describing fine-grained differences between images with pretraining and contrastive learning.</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2202.04298.pdf">Paper</a> <a href="https://github.com/yaolinli/IDC">Code</a></div>
+            </div>
+          </div>
+        </div>
+        <details class="disclosure more-publications" id="additional-publications">
+        <summary><span class="when-closed">More publications &amp; collaborations</span><span class="when-open">Hide additional publications</span></summary>
+        <ul class="compact-publications">
+            <li id="claw-eval">
+            <h3 class="paper"><a href="https://claw-eval.github.io/">Claw-Eval: Towards Trustworthy Evaluation of Autonomous Agents</a></h3>
+            <div class="conf">NeurIPS 2026 ED Track · Poster</div>
+            <div>An open evaluation suite for autonomous agents across real-world tasks. (contribute to the multimodal evaluation component)</div>
+            <div class="paper-links"><a href="https://claw-eval.github.io/">Project &amp; Leaderboard</a> <a href="https://arxiv.org/abs/2604.06132">Paper</a> <a href="https://github.com/claw-eval/claw-eval">Code</a> <a href="https://huggingface.co/datasets/claw-eval/Claw-Eval">Dataset</a></div>
+          </li>
+            <li id="adac-grpo">
+              <h3 class="paper">AdaC-GRPO: Towards Mastering Long-Horizon Visual Sudoku Puzzles via Adaptive Curriculum Learning</h3>
+              <div class="conf">Findings of EMNLP 2026</div>
+            </li>
+            <li id="quality-outcome">
+              <h3 class="paper">Quality, Not Just Outcome: A Structural Scoring Framework for Selecting Coding-Agent Trajectories for Supervised Fine-Tuning</h3>
+              <div class="conf">Findings of EMNLP 2026</div>
+            </li>
+            <li id="diadem">
+              <h3 class="paper"><a href="https://arxiv.org/abs/2601.19267">DiaDem: Advancing Dialogue Descriptions in Audiovisual Video Captioning for Multimodal Large Language Models</a></h3>
+              <div class="author">Xinlong Chen, Weihong Lin, Jingyun Hua, <strong>Linli Yao</strong>, et al.</div>
+              <div class="conf">ECCV 2026</div>
+            </li>
+            <li id="reaforest">
+              <h3 class="paper"><a href="https://openreview.net/forum?id=Ktvb8rqFV7">ReaForest: Fostering Generative Video Reasoning for Spatial Planning</a></h3>
+              <div class="author">Kun Ouyang, Yuanxin Liu, Xinhao Li, <strong>Linli Yao</strong>, et al.</div>
+              <div class="conf">ICML 2026</div>
+            </li>
+            <li id="avocado">
+              <h3 class="paper"><a href="https://arxiv.org/abs/2510.10395">AVoCaDO: An Audiovisual Video Captioner Driven by Temporal Orchestration</a></h3>
+              <div class="author">Xinlong Chen, Yue Ding, Weihong Lin, Jingyun Hua, <strong>Linli Yao</strong>, et al.</div>
+              <div class="conf">ICLR 2026</div>
+            </li>
+            <li id="conan">
+              <h3 class="paper"><a href="https://arxiv.org/abs/2510.20470">Conan: Progressive Learning to Reason Like a Detective over Multi-Scale Visual Evidence</a></h3>
+              <div class="author">Kun Ouyang, Yuanxin Liu, <strong>Linli Yao</strong>, Yishuo Cai, et al.</div>
+              <div class="conf">CVPR 2026</div>
+            </li>
+            <li id="rico-selection">
+              <h3 class="paper"><a href="https://ojs.aaai.org/index.php/AAAI/article/download/40732/44693">RICo: Refined In-Context Contribution for Automatic Instruction-Tuning Data Selection</a></h3>
+              <div class="author">Yixin Yang, Qingxiu Dong, <strong>Linli Yao</strong>, Fangwei Zhu, et al.</div>
+              <div class="conf">AAAI 2026</div>
+            </li>
+            <li id="camera-motion">
+              <h3 class="paper">Trajectory-Enhanced Camera Motion Understanding for Multimodal Large Language Models</h3>
+              <div class="author">Yuanxin Liu, Sida Li, Kun Ouyang, Shicheng Li, <strong>Linli Yao</strong>, Xu Sun, Weike Jin</div>
+              <div class="conf">ICASSP 2026</div>
+            </li>
+            <li id="rico-recaptioning">
+              <h3 class="paper"><a href="https://aclanthology.org/2025.emnlp-main.1105/">RICO: Improving Accuracy and Completeness in Image Recaptioning via Visual Reconstruction</a></h3>
+              <div class="author">Yuchi Wang, Yishuo Cai, Shuhuai Ren, Sihan Yang, <strong>Linli Yao</strong>, et al.</div>
+              <div class="conf">EMNLP 2025</div>
+            </li>
+            <li id="additional-5">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2410.06166">Temporal Reasoning Transfer from Text to Video</a></h3>
+              <div class="author">Lei Li*, Yuanxin Liu*, <b>Linli Yao</b>, Peiyuan Zhang, Chenxin An, Lean Wang, Xu Sun, Lingpeng Kong, Qi Liu</div>
+              <div class="conf">ICLR 2025</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2410.06166">Paper</a> <a href="https://video-t3.github.io/">Project Page</a> <a href="https://github.com/llyx97/video-t3/">Code</a></div>
+            </li>
+            <li id="additional-8">
+              <h3 class="paper"><a href="https://dl.acm.org/doi/abs/10.1145/3652583.3658038">UBiSS: A Unified Framework for Bimodal Semantic Summarization of Videos</a></h3>
+              <div class="author">Yuting Mei, <b>Linli Yao</b>, Qin Jin</div>
+              <div class="conf">ICMR 2024</div>
+              <div class="paper-links"><a href="https://dl.acm.org/doi/abs/10.1145/3652583.3658038">Paper</a> <a href="https://github.com/MeiYutingg/UBiSS">Code</a></div>
+            </li>
+            <li id="additional-9">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2404.10763">LaDiC: Are Diffusion Models Really Inferior to Autoregressive Counterparts for Image-to-text Generation?</a></h3>
+              <div class="author">Yuchi Wang, Shuhuai Ren, Rundong Gao, <b>Linli Yao</b>, Qingyan Guo, Kaikai An, Jianhong Bai, Xu Sun</div>
+              <div class="conf">NAACL 2024</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2404.10763">Paper</a> <a href="https://github.com/wangyuchi369/LaDiC">Code</a></div>
+            </li>
+            <li id="additional-11">
+              <h3 class="paper"><a href="https://arxiv.org/pdf/2304.10824.pdf">Rethinking Benchmarks for Cross-modal Image-text Retrieval</a></h3>
+              <div class="author">Weijing Chen, <b>Linli Yao</b>, Qin Jin</div>
+              <div class="conf">SIGIR 2023, long paper</div>
+              <div class="paper-links"><a href="https://arxiv.org/pdf/2304.10824.pdf">Paper</a> <a href="https://github.com/cwj1412/MSCOCO-Flikcr30K_FG">Code</a></div>
+            </li>
+            <li id="makeup-ranking">
+              <h3 class="paper">基于语言描述的细粒度美妆图片排序</h3>
+              <div class="author"><strong>姚林丽</strong>，陈师哲，金琴</div>
+              <div class="conf">计算机科学 · 2020</div>
+            </li>
+        </ul>
+      </details>
+      </section>
+
+      <section id="experience">
+        <h2>Industry Experience</h2>
+        <div class="row item">
+          <div class="col-md-2 col-sm-6 col-xs-12 item-img">
+            <a class="image-popup-no-margins" href="./assets/img/paper/mimo-logo.jpg"><img src="./assets/img/paper/mimo-logo.jpg" class="img-thumbnail img-responsive mimo-company-logo" alt="Xiaomi MiMo logo" loading="lazy"></a>
+          </div>
+          <div class="col-md-10 col-sm-6 col-xs-12 item-info">
+            <div class="time"><b>2026.01 - Present</b></div>
+            <div class="job"><b>Research Intern · <span lang="zh-CN">“顶尖人才计划”</span></b></div>
+            <div class="content">MiMo LLM-Core, Xiaomi.</div>
+          </div>
+        </div>
+
+        <div class="row item">
                         <div class="col-md-2 col-sm-6 col-xs-12 item-img">
-                            <a class="image-popup-no-margins" href="./assets/img/paper/kuaishou.png">
+                            <a class="image-popup-no-margins" href="./assets/img/paper/klingai.png">
                                 <img src="./assets/img/paper/klingai.png" class="img-thumbnail img-responsive">
                             </a>
                         </div>
@@ -441,7 +361,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="spacer"><p></p><p></p></div>
 
                     <div class="row item">
                         <div class="col-md-2 col-sm-6 col-xs-12 item-img">
@@ -457,7 +376,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="spacer"><p></p><p></p></div>
 
                     <div class="row item">
                         <div class="col-md-2 col-sm-6 col-xs-12 item-img">
@@ -473,101 +391,82 @@
                             </div>
                         </div>
                     </div>
-                    <div class="spacer"><p></p><p></p></div>
 
-                    <div class="row item">
-                        <div class="col-md-2 col-sm-6 col-xs-12 item-img">
-                            <a class="image-popup-no-margins" href="./assets/img/paper/pic.jpg">
-                                <img src="./assets/img/paper/pic.jpg" class="img-thumbnail img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-md-10 col-sm-6 col-xs-12 item-info">
-                            <div class="time"><b> 2022.04 - 2022.10 </b></div>
-                            <div class="job"><b>Organizer / Workshop Chair</b></div>
-                            <div class="content">
-                                <b><a href="http://www.picdataset.com/" target="_blank" rel="noopener noreferrer">Person in Context (PIC) Workshop</a> @ ACM MM 2022 </b>
-                                <p>The <a href="https://github.com/AIM3-RUC/Youmakeup_Challenge2022" target="_blank" rel="noopener noreferrer">MTVG and MDVC tasks</a> attracted participation from 40 teams worldwide, including prestigious institutions such as Tsinghua University, Peking University, and the University of Hong Kong. It also included industry teams like Tencent, JD.com, Xiaomi, and Bilibili.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="spacer"><p></p><p></p></div>
+      </section>
 
-                    <div class="row item">
-                        <div class="col-md-2 col-sm-6 col-xs-12 item-img">
-                            <a class="image-popup-no-margins" href="./assets/img/paper/youmakeup.png">
-                                <img src="./assets/img/paper/youmakeup.png" class="img-thumbnail img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-md-10 col-sm-6 col-xs-12 item-info">
-                            <div class="time"><b> 2020.04 - 2020.07 </b></div>
-                            <div class="job"><b>Organizer</b></div>
-                            <div class="content">
-                                <b><a href="https://languageandvision.github.io/youmakeup_vqa/index.html" target="_blank" rel="noopener noreferrer">YouMakeup Video Challenge</a> @ CVPR LVVU Workshop 2020</b>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="spacer"><p></p><p></p></div>
+      <section id="awards">
+        <h2>Honors &amp; Awards</h2>
+        <ul class="award-list">
+          <li>Silver Reviewer Award · ICML · 2026</li>
+          <li>ACM SIGMM Student Travel Grant · ACM Multimedia · 2024 &amp; 2025</li>
+          <li>National Scholarship · Ministry of Education of China · 2022</li>
+          <li>Outstanding Graduate · Renmin University of China · 2023 & 2020</li>
+          <li>1st Class Grade Scholarship · Renmin University of China · 2022 & 2021</li>
+          <li>Merit Student · Renmin University of China · 2021 & 2018</li>
+          <li>1st Prize of China Undergraduate Mathematical Contest in Modeling (Beijing) · Beijing · 2019</li>
+          <li>Meritorious Winner of American Mathematical Contest In Modeling · U.S. · 2018</li>
+        </ul>
+      </section>
 
-                </div>
-                <br>
-                <div id="awards"><h2>Awards</h2>
-                    <div class="table-responsive">
-                        <table class="table table-sm table-borderless">
-                            <tr>
-                                <th scope="row">2022</th>
-                                <td>National Scholarship</td>
-                               <td>Ministry of Education of China</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2023 & 2020</th>
-                                <td>Outstanding Graduate</td>
-                               <td>Renmin University of China</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2022 & 2021</th>
-                                <td>1st Class Grade Scholarship</td>
-                               <td>Renmin University of China</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2021 & 2018</th>
-                                <td>Merit Student</td>
-                               <td>Renmin University of China</td>
-                            </tr>
+      <section id="service">
+        <h2 id="service-heading">Academic Service &amp; Teaching</h2>
+      <h3 class="service-label">Workshop &amp; Challenge Organization</h3>
+      <div class="row item">
+        <div class="col-md-2 col-sm-6 col-xs-12 item-img">
+          <a class="image-popup-no-margins" href="./assets/img/paper/pic.jpg"><img src="./assets/img/paper/pic.jpg" class="img-thumbnail img-responsive" alt="Person in Context Workshop" loading="lazy"></a>
+        </div>
+        <div class="col-md-10 col-sm-6 col-xs-12 item-info">
+          <div class="time"><b>2022.04 - 2022.10</b></div>
+          <div class="job"><b>Organizer / Workshop Chair</b></div>
+          <div class="content">
+            <b><a href="http://www.picdataset.com/">Person in Context (PIC) Workshop</a> @ ACM MM 2022</b>
+            <p>The <a href="https://github.com/AIM3-RUC/Youmakeup_Challenge2022">MTVG and MDVC challenges</a> attracted 40 teams worldwide.</p>
+          </div>
+        </div>
+      </div>
 
-                            <tr>
-                                <th scope="row">2019</th>
-                                <td>1st Prize of China Undergraduate Mathematical Contest in Modeling (Beijing)</td>
-                               <td>Beijing</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2018</th>
-                                <td>Meritorious Winner of American Mathematical Contest In Modeling</td>
-                               <td>U.S.</td>
-                            </tr>
+      <div class="row item">
+        <div class="col-md-2 col-sm-6 col-xs-12 item-img">
+          <a class="image-popup-no-margins" href="./assets/img/paper/youmakeup.png"><img src="./assets/img/paper/youmakeup.png" class="img-thumbnail img-responsive" alt="YouMakeup Video Challenge" loading="lazy"></a>
+        </div>
+        <div class="col-md-10 col-sm-6 col-xs-12 item-info">
+          <div class="time"><b>2020.04 - 2020.07</b></div>
+          <div class="job"><b>Organizer</b></div>
+          <div class="content"><b><a href="https://languageandvision.github.io/youmakeup_vqa/index.html">YouMakeup Video Challenge</a> @ CVPR LVVU Workshop 2020</b></div>
+        </div>
+      </div>
 
-                        </table>
-                    </div>
-                </div>
-                <br>
-                <div id="service"><h2>Academic Service</h2>
+      <h3 class="service-label">Reviewing</h3>
+      <dl class="reviewing-list">
+        <div><dt>Conferences:</dt><dd>CVPR (2024–2026), ICLR (2025–2026), ICML (2026), ECCV (2026), NeurIPS (2024–2026), AAAI (2023–2024), and ACM Multimedia (2024–2026).</dd></div>
+        <div><dt>Journals:</dt><dd>IEEE Transactions on Image Processing (TIP) and IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).</dd></div>
+      </dl>
+      <h3 class="service-label">Teaching Assistant</h3>
+      <ul class="service-list">
+        <li>Human Language and Artificial Intelligence · Peking University · 2024, 2026</li>
+        <li>Academic Criterion and Writing · Renmin University of China · 2022</li>
+        <li>Spoken Language Processing · Renmin University of China · 2020</li>
+        <li>Multimedia Application Technology · Renmin University of China · 2020</li>
+      </ul>
+      </section>
+    </article>
 
-                    <li><span class="glyphicon"></span><b>Reviewer</b>: AAAI 2023/2024, CVPR 2024/2025, NeurIPS 2024, ACM MM 2024/2025, Transactions on Image Processing.
-                    </li>
-
-                    <li><span class="glyphicon"></span><b>Teaching assistant</b>:
-                        Spoken Language Processing (RUC, 2020), Multimedia Application Technology (RUC, 2020), Academic Criterion and Writing (RUC, 2022), Human Language and Artificial Intelligence (PKU, 2024).
-                    </li>
-                </div>
-            </article>
-        </header>
-    <br><br><br>
-    <div class="container" style="width: 80%;">
-        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=nzhtGv2it_dCIiFvXNs7ySbCnYjQgPdb_Jf3RDl7MFU&cl=ffffff&w=a"></script>
-    </div>
-</div>
-</div>
-<footer class="fixed-bottom">
-    <div class="container mt-0" style="text-align: center"> © Copyright 2023 Linli Yao. Last updated: Feb 23, 2026.
+    <section class="visitor-section" id="visitors" aria-label="Visitor statistics">
+      <p class="visitor-caption">Visitor map &amp; total pageviews · MapMyVisitors</p>
+      <div class="visitor-map">
+        <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=nJZU5ZuZQHIkEXKgHMVTjZV8HO9VlA5ABe_HTKlLnxs&amp;cl=ffffff&amp;w=a&amp;t=tt"></script>
+        <noscript>
+          <a href="https://mapmyvisitors.com/web/1c8gp" title="View visitor statistics" target="_blank" rel="noopener noreferrer">
+            <img src="https://mapmyvisitors.com/map.png?d=nJZU5ZuZQHIkEXKgHMVTjZV8HO9VlA5ABe_HTKlLnxs&amp;cl=ffffff" alt="Visitor map for Linli Yao's homepage">
+          </a>
+        </noscript>
+      </div>
+      <p class="visitor-account"><a href="https://mapmyvisitors.com/web/1c8gp" target="_blank" rel="noopener noreferrer">View visitor statistics &amp; history ↗</a></p>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+    <div class="container mt-0" style="text-align: center"> © Copyright 2026 Linli Yao. Last updated: September 26, 2026.
     </div>
 </footer>
 <script type="text/javascript">$(document).ready(function () {
@@ -616,6 +515,7 @@
 <script type="text/javascript">window.MathJax = {tex: {tags: "ams"}};</script>
 <script defer type="text/javascript" id="MathJax-script"
         src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script defer src="./assets/js/homepage.js?v=original-layout-2"></script>
+<script defer src="./assets/js/open-source-metrics.js?v=4"></script>
 </body>
 </html>
